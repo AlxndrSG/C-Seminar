@@ -7,18 +7,18 @@
 // 918 -> 1
 
 Console.Clear();
-int intA;
+int varA;
 while (true)
 {
     Console.Write("Введите трехзначное число: ");
-    if (int.TryParse(Console.ReadLine(), out intA));
-        break;
+    if (int.TryParse(Console.ReadLine(), out varA))
+    break;
     Console.WriteLine("Ошибка ввода!");
 }
-if (intA >= 100 && intA < 1000)
+if (varA >= 100 && varA < 1000)
 {
-    int result = (intA % 100 - intA % 10) / 10;
-    Console.WriteLine($"{intA}-> {result}");
+    int result = (varA % 100 - varA % 10) / 10;
+    Console.WriteLine($"{varA}-> {result}");
 }
 else
     {
